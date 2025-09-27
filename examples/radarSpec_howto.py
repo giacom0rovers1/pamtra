@@ -54,8 +54,8 @@ plt.xlim(100e-6,1200e-6)
 plt.savefig("radar_howto_0.png")
 
 plt.figure()
-plt.plot(diameter, np.log10(sigma_D))
-plt.xlabel("Diameter [m]")
+plt.plot(diameter, 10*np.log10(sigma_D)) # 10* added 
+plt.xlabel("Diameter [m]") 
 plt.ylabel("Backscattering [dB]")
 plt.title("Backscattering per diameter")
 #plt.xscale("log")

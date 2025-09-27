@@ -64,3 +64,8 @@ examples/scatfiles/*
 examples/.ipynb_checkpoints/
 examples/data/
 .idea
+.virtual_documents
+.ipynb_checkpoints
+*.ipynb_checkpoints*
+
+

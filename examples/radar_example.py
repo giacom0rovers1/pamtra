@@ -40,7 +40,9 @@ for turb in [1,0.5,0.1,0.01,0]:
 plt.legend()
 plt.xlabel('Doppler velocity')
 plt.ylabel('spectral reflectivity')
-plt.show()
 plt.legend()
+
+plt.show()
+
 # print pam.fortObject.vars_output.out_debug_radarback_wturb
 
