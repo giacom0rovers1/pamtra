@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(where gfortran *)",
+      "Bash(mamba list *)",
+      "Bash(findstr /I \"gfortran gcc m2w64 fftw openblas netcdf libpython meson cython numpy compiler ucrt fortran\")"
+    ]
+  }
+}
