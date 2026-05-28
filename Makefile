@@ -168,7 +168,7 @@ $(BINDIR)$(BIN): $(FOBJECTS) $(FOBJECTS_NC) | $(BINDIR)
 	$(FC) -I$(OBJDIR) -o $(BINDIR)$(BIN) $(SRCDIR)pamtra.f90 $(FOBJECTS) $(FOBJECTS_NC) $(LFLAGS) $(LDFLAGS)
 
 $(OBJDIR)scatdb.o:  $(SRCDIR)scatdb.c  | $(OBJDIR)
-	$(CC) -O  -fPIC -c $< -o $@
+	$(CC) -O  -fPIC -std=gnu11 -c $< -o $@
 
 $(OBJDIR)%.o:  $(SRCDIR)%.f90 | $(OBJDIR)
 	$(FC) $(FCFLAGS) $< -o $@
